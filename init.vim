@@ -1,0 +1,19 @@
+syntax enable
+set hidden
+set encoding=utf-8
+set fileencoding=utf-8
+set ruler
+set mouse=a
+set t_Co=256
+set conceallevel=0
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set smartindent
+set autoindent
+set laststatus=0
+set number relativenumber
+set nobackup
+set nowritebackup
+set updatetime=300
+set clipboard=unnamedplus
