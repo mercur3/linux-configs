@@ -1,0 +1,7 @@
+
+
+# ^~~~~~ other stuff
+####################
+
+load-module module-echo-cancel source_name=some_name_to_be_set_as_default
+set-default-source some_name_to_be_set_as_default
