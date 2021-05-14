@@ -31,7 +31,7 @@ window:
   # fall back to the window manager's recommended size.
   dimensions:
     columns: 100
-    lines: 34
+    lines: 32
 
   # Window position (changes require restart)
   #
@@ -165,7 +165,7 @@ font:
   #use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: false
 
 # Colors (Dracula)
 colors:
@@ -307,7 +307,7 @@ colors:
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
-#bell:
+bell:
   # Visual Bell Animation
   #
   # Animation effect for flashing the screen when the visual bell is rung.
@@ -323,14 +323,14 @@ colors:
   #   - EaseOutExpo
   #   - EaseOutCirc
   #   - Linear
-  #animation: EaseOutExpo
+  animation: EaseOutExpo
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
-  #duration: 0
+  duration: 0
 
   # Visual bell animation color.
-  #color: '#ffffff'
+  color: '#ffffff'
 
   # Bell Command
   #
@@ -343,13 +343,13 @@ colors:
   #     program: notify-send
   #     args: ["Hello, World!"]
   #
-  #command: None
+  command: None
 
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.95
+background_opacity: 0.75
 
 #selection:
   # This string contains all characters that are used as separators for

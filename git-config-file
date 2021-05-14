@@ -1,7 +1,10 @@
 [user]
-    name = ***
-    email = ***
+    name = Andri Reveli
+    email = reveliandri@gmail.com
 [color]
     ui = true
 [init]
-	defaultBranch = "master"
+	defaultBranch = "master" 
+[credentials]
+	helper = "store"
+
