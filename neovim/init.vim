@@ -12,7 +12,7 @@ set smarttab
 set smartindent
 set autoindent
 set laststatus=0
-set number relativenumber
+set number
 set nobackup
 set nowritebackup
 set updatetime=300
