@@ -6,5 +6,5 @@
 [init]
 	defaultBranch = "master" 
 [credential]
-	helper = cache
+	helper = store
 
