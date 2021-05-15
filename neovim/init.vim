@@ -17,3 +17,4 @@ set nobackup
 set nowritebackup
 set updatetime=300
 set clipboard=unnamedplus
+set noexpandtab
