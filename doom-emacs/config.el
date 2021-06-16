@@ -58,7 +58,7 @@
 
 (setq
  doom-theme 'doom-dark+
- projectile-project-search-path '("~/tmp/", "~/projects/"))
+ projectile-project-search-path '("~/tmp/" "~/projects/"))
 
 ;; keybindings for switching tabs
 (evil-define-key 'normal centaur-tabs-mode-map (kbd "C-<right>") 'centaur-tabs-forward         ; default Doom binding is 'g t'
