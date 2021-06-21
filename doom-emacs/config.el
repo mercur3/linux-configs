@@ -25,7 +25,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-;; (setq doom-theme 'doom-one)
+(setq doom-theme 'doom-dark+)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -56,10 +56,15 @@
 ;; start on fullscreen mode
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(setq doom-theme 'doom-dark+
-      projectile-project-search-path '("~/tmp/" "~/code/"))
+;; search for projects
+(setq projectile-project-search-path '("~/tmp/" "~/code/"))
 
 ;; keybindings for switching tabs
 (evil-define-key 'normal centaur-tabs-mode-map (kbd "C-<right>") 'centaur-tabs-forward         ; default Doom binding is 'g t'
                                                (kbd "C-<left>")  'centaur-tabs-backward)       ; default Doom binding is 'g T'
+
+;; modeline
+(custom-set-faces!
+  '(mode-line :height 0.9)
+  '(mode-line-inactive :height 0.9))
 
