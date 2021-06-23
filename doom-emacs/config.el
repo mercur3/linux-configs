@@ -63,8 +63,3 @@
 (evil-define-key 'normal centaur-tabs-mode-map (kbd "C-<right>") 'centaur-tabs-forward         ; default Doom binding is 'g t'
                                                (kbd "C-<left>")  'centaur-tabs-backward)       ; default Doom binding is 'g T'
 
-;; modeline
-(custom-set-faces!
-  '(mode-line :height 0.9)
-  '(mode-line-inactive :height 0.9))
-
