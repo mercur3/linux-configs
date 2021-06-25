@@ -63,3 +63,9 @@
 (evil-define-key 'normal centaur-tabs-mode-map (kbd "C-<right>") 'centaur-tabs-forward         ; default Doom binding is 'g t'
                                                (kbd "C-<left>")  'centaur-tabs-backward)       ; default Doom binding is 'g T'
 
+;; prettier symbols
+(setq prettify-symbols-alist
+      '(("lambda" . 955)))
+(global-prettify-symbols-mode 1)
+
+(setq fancy-splash-image "~/.doom.d/emacs-icon.png")
