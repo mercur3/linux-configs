@@ -1,0 +1,14 @@
+firefox
+git
+jetbrains-mono-fonts-all
+ripgrep
+fd-find
+emacs
+exa
+redshift
+thunderbird
+flatpak
+alacritty
+nvim
+htop
+

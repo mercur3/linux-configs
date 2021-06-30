@@ -1,1 +1,0 @@
-PATH = ~/.config/redshift.conf
