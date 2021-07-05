@@ -62,13 +62,18 @@
 ;; search for projects
 (setq projectile-project-search-path '("~/tmp/" "~/code/"))
 
-;; keybindings for switching tabs
+;; centaur tabs
 (evil-define-key 'normal centaur-tabs-mode-map (kbd "C-<right>") 'centaur-tabs-forward         ; default Doom binding is 'g t'
                                                (kbd "C-<left>")  'centaur-tabs-backward)       ; default Doom binding is 'g T'
+(setq centaur-tabs-set-bar 'over
+      centaur-tabs-style "alternate"
+      centaur-tabs-set-close-button nil
+      centaur-tabs-show-new-tab-button nil)
 
 ;; prettier symbols
 (setq prettify-symbols-alist
       '(("lambda" . 955)))
 (global-prettify-symbols-mode 1)
 
+;; use custom image on splash screen
 (setq fancy-splash-image "~/.doom.d/emacs-icon.png")
