@@ -38,3 +38,5 @@ set clipboard=unnamedplus
 " search highlight
 set hlsearch
 set incsearch
+set clipboard+=ideaput
+
