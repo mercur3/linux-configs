@@ -9,6 +9,6 @@ redshift
 thunderbird
 flatpak
 alacritty
-nvim
+vim
 htop
 
