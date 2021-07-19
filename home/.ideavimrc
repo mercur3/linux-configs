@@ -39,4 +39,5 @@ set clipboard=unnamedplus
 set hlsearch
 set incsearch
 set clipboard+=ideaput
-
+set showmode
+set showcmd
