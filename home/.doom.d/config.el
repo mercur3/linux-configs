@@ -77,3 +77,7 @@
 
 ;; use custom image on splash screen
 (setq fancy-splash-image "~/.doom.d/emacs-icon.png")
+
+;; keybindings
+(map! :leader
+      :nv ":" nil)
