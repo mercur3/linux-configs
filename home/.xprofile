@@ -1,0 +1,2 @@
+# set key repeat rate. delay 200 milisecond, 50 per sec
+xset r rate 200 50
