@@ -81,3 +81,12 @@
 ;; keybindings
 (map! :leader
       :nv ":" nil)
+
+;; display column indicator at
+(add-hook 'prog-mode-hook (lambda ()
+                            (setq fill-column 100)
+                            (display-fill-column-indicator-mode)))
+
+;; wrap long lines
+(add-hook 'prog-mode-hook (lambda ()
+                            (setq truncate-lines 'nil)))
