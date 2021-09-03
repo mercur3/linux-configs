@@ -82,11 +82,8 @@
 (map! :leader
       :nv ":" nil)
 
-;; display column indicator at
+;; programming mode setup
 (add-hook 'prog-mode-hook (lambda ()
-                            (setq fill-column 100)
-                            (display-fill-column-indicator-mode)))
-
-;; wrap long lines
-(add-hook 'prog-mode-hook (lambda ()
-                            (setq truncate-lines 'nil)))
+                            (setq fill-column 100)                      ;; visual column line
+                            (display-fill-column-indicator-mode)        ;; display column indicator at
+                            (setq truncate-lines 'nil)))                ;; wrap long lines
