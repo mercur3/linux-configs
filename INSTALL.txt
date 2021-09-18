@@ -11,4 +11,4 @@ flatpak
 alacritty
 vim
 htop
-
+git-delta

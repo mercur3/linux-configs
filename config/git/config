@@ -7,4 +7,10 @@
 	defaultBranch = "master" 
 [credential]
 	helper = store
-
+[pager]
+    diff = delta
+[delta]
+    line-numbers = true
+    side-by-side = true
+    line-numbers-left-format = "{nm:>4}│"
+    line-numbers-right-format = "{np:>4}│"
