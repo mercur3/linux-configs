@@ -78,6 +78,9 @@
 ;; use custom image on splash screen
 (setq fancy-splash-image "~/.doom.d/emacs-icon.png")
 
+;; display icons with colors
+(setq doom-themes-treemacs-theme "doom-colors")
+
 ;; keybindings
 (map! :leader
       :nv ":" nil)
