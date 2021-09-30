@@ -12,3 +12,4 @@ alacritty
 vim
 htop
 git-delta
+foliate
