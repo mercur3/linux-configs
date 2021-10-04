@@ -1,4 +1,0 @@
-Command         Description
-
-K               show function/class/module documentation
-g c c           (un)comment line

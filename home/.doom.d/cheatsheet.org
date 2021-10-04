@@ -1,0 +1,40 @@
+* Cheat sheet for Doom Emacs
+This file contains various keybindings used in Doom Emacs.
+
+** evil-multiedit
+| keybinding | description     |
+|------------+-----------------|
+| M-d        | select next     |
+| M-D        | select previous |
+| R          | select all      |
+| C-n        | go to next      |
+| C-p        | go to previous  |
+| Enter      | deselect        |
+
+** dired
+| +   | create directory         |
+| d   | mark for delete          |
+| x   | delete                   |
+| -   | go to previous directory |
+| u/m | (un)mark                 |
+
+** org-mode
+| keybinding   | description                 |
+|--------------+-----------------------------|
+| Tab          | (un)fold heading            |
+| Shift Tab    | (un)fold all headings       |
+| M-up/down    | move heading  up/down       |
+| M-left/right | move heading -1/+1 level    |
+| C-Enter      | insert new heading/list/... |
+
+** Programming
+| keybinding | description                              |
+|------------+------------------------------------------|
+| K          | show function/class/module documentation |
+| g c c      | (un)comment line                         |
+
+** treemacs
+| c f | create file      |
+| c d | create directory |
+| R   | rename           |
+| d   | delete           |
