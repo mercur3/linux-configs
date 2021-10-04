@@ -94,3 +94,6 @@
 (add-hook 'prog-mode-hook #'setup)
 (add-hook 'org-mode-hook #'setup)
 (setq lsp-ui-doc-enable nil)
+
+;; org-mode
+(setq org-ellipsis " ▾")
