@@ -89,7 +89,8 @@
 (defun setup ()
   (setq fill-column 100)                        ;; visual column line
   (display-fill-column-indicator-mode)          ;; display column indicator at
-  (setq truncate-lines 'nil))                   ;; wrap long lines
+  (setq truncate-lines 'nil)                    ;; wrap long lines
+  (modify-syntax-entry ?_ "w"))                 ;; _ is not treated as part of the word
 
 (add-hook 'prog-mode-hook #'setup)
 (add-hook 'org-mode-hook #'setup)
@@ -97,3 +98,7 @@
 
 ;; org-mode
 (setq org-ellipsis " ▾")
+
+;; ensure rust-analyzer is used as lsp-server
+(after! rustic
+  (setq rustic-lsp-server 'rust-analyzer))
