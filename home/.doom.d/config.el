@@ -9,36 +9,6 @@
 (setq user-full-name "Andri Reveli"
       user-mail-address "reveliandri@gmail.com")
 
-;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
-;; are the three important ones:
-;;
-;; + `doom-font'
-;; + `doom-variable-pitch-font'
-;; + `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;;
-;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
-;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "JetBrains Mono" :size 16)
-      doom-big-font (font-spec :family "JetBrains Mono" :size 26))
-
-(custom-set-faces!
-  '(font-lock-comment-face :slant italic))
-
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
-
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
-
-;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
-
-
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -56,49 +26,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; start on fullscreen mode
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
-
-;; search for projects
-(setq projectile-project-search-path '("~/tmp/" "~/code/"))
-
-;; centaur tabs
-(evil-define-key 'normal centaur-tabs-mode-map (kbd "C-<right>") 'centaur-tabs-forward         ; default Doom binding is 'g t'
-                                               (kbd "C-<left>")  'centaur-tabs-backward)       ; default Doom binding is 'g T'
-(setq centaur-tabs-set-bar 'over
-      centaur-tabs-style "alternate"
-      centaur-tabs-set-close-button nil
-      centaur-tabs-show-new-tab-button nil)
-
-;; prettier symbols
-(setq prettify-symbols-alist
-      '(("lambda" . 955)))
-(global-prettify-symbols-mode 1)
-
-;; use custom image on splash screen
-(setq fancy-splash-image "~/.doom.d/emacs-icon.png")
-
-;; display icons with colors
-(setq doom-themes-treemacs-theme "doom-colors")
-
-;; keybindings
-(map! :leader
-      :nv ":" nil)
-
-;; editor setup
-(defun setup ()
-  (setq fill-column 100)                        ;; visual column line
-  (display-fill-column-indicator-mode)          ;; display column indicator at
-  (setq truncate-lines 'nil)                    ;; wrap long lines
-  (modify-syntax-entry ?_ "w"))                 ;; _ is not treated as part of the word
-
-(add-hook 'prog-mode-hook #'setup)
-(add-hook 'org-mode-hook #'setup)
-(setq lsp-ui-doc-enable nil)
-
-;; org-mode
-(setq org-ellipsis " ▾")
-
-;; ensure rust-analyzer is used as lsp-server
-(after! rustic
-  (setq rustic-lsp-server 'rust-analyzer))
+(load! "configs/ui")
+(load! "configs/keybindings")
+(load! "configs/org")
+(load! "configs/programming")
