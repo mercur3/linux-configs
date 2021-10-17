@@ -14,6 +14,8 @@ set expandtab
 set mouse=a
 set clipboard=unnamedplus
 set linebreak
-set textwidth=100
 set showmatch
 set hlsearch
+set textwidth=100
+set colorcolumn=+0
+highlight ColorColumn ctermbg=0 guibg=lightgray
