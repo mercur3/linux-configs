@@ -11,8 +11,7 @@
 (defun setup ()
   (setq fill-column 100)                        ;; visual column line
   (display-fill-column-indicator-mode)          ;; display column indicator at
-  (setq truncate-lines 'nil)                    ;; wrap long lines
-  (modify-syntax-entry ?_ "w"))                 ;; _ is not treated as part of the word
+  (setq truncate-lines 'nil))                   ;; wrap long lines
 
 (add-hook 'prog-mode-hook #'setup)
 (add-hook 'org-mode-hook #'setup)
