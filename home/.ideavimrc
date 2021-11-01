@@ -27,6 +27,8 @@ map Q gq
 " Find more examples here: https://jb.gg/share-ideavimrc
 
 " Custom
+let mapleader = " "
+map <leader>w <C-w>
 
 " map ctrl-left/right to move tab left/right
 nnoremap <C-Left> :tabprevious<CR>
@@ -45,3 +47,7 @@ set showcmd
 " intellij specific
 set ideajoin
 set ideawrite=file
+
+" NERDTree
+set NERDTree
+nmap <leader>op :NERDTreeToggle<CR>
