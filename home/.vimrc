@@ -18,4 +18,10 @@ set showmatch
 set hlsearch
 set textwidth=100
 set colorcolumn=+0
-highlight ColorColumn ctermbg=0 guibg=lightgray
+highlight ColorColumn ctermbg=DarkGray guibg=lightgray
+
+" remaps
+let mapleader = " "
+map <leader>w <C-w>
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
