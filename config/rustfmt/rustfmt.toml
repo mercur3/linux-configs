@@ -23,3 +23,4 @@ struct_lit_single_line = true
 tab_spaces = 4
 trailing_semicolon = true
 use_try_shorthand = false
+version = "Two"
