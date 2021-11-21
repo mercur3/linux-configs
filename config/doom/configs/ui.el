@@ -31,4 +31,4 @@
 (setq doom-themes-treemacs-theme "doom-colors")
 
 ;; use custom image on splash screen
-(setq fancy-splash-image "~/.doom.d/resource/img/emacs-icon.png")
+(setq fancy-splash-image "~/.config/doom/resource/img/emacs-icon.png")
