@@ -3,7 +3,8 @@
 ;; show when org heading is folded
 (setq org-ellipsis " ▾")
 
-(setq org-superstar-headline-bullets-list '(8278))
+(setq org-superstar-headline-bullets-list '(8278 8280 8281))
+(setq org-superstar-cycle-headline-bullets nil)
 
 ;; display italic, bold, etc. inline words without markers
 (setq org-hide-emphasis-markers t)
