@@ -26,6 +26,9 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; do not prompt for exit confirmation
+(setq confirm-kill-emacs nil)
+
 (load! "configs/ui")
 (load! "configs/keybindings")
 (load! "configs/org")
