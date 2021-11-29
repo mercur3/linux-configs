@@ -3,7 +3,7 @@ This file contains various keybindings used in Doom Emacs.
 
 ** evil-multiedit
 |------------+-----------------|
-| keybinding | description     |
+| Keybinding | Description     |
 |------------+-----------------|
 | M-d        | select next     |
 | M-D        | select previous |
@@ -15,7 +15,7 @@ This file contains various keybindings used in Doom Emacs.
 
 ** dired
 |------------+--------------------------|
-| keybinding | description              |
+| Keybinding | Description              |
 |------------+--------------------------|
 | +          | create directory         |
 | d          | mark for delete          |
@@ -26,7 +26,7 @@ This file contains various keybindings used in Doom Emacs.
 
 ** org-mode
 |--------------+-----------------------------|
-| keybinding   | description                 |
+| Keybinding   | Description                 |
 |--------------+-----------------------------|
 | Tab          | (un)fold heading            |
 | Shift Tab    | (un)fold all headings       |
@@ -37,15 +37,15 @@ This file contains various keybindings used in Doom Emacs.
 
 ** Programming
 |------------+------------------------------------------|
-| keybinding | description                              |
+| Keybinding | Description                              |
 |------------+------------------------------------------|
 | K          | show function/class/module documentation |
-| g c c      | (un)comment line                         |
+| g c        | (un)comment line                         |
 |------------+------------------------------------------|
 
 ** treemacs
 |------------+------------------|
-| keybinding | description      |
+| Keybinding | Description      |
 |------------+------------------|
 | c f        | create file      |
 | c d        | create directory |
