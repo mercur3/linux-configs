@@ -21,4 +21,6 @@
 
 ;; ensure rust-analyzer is used as lsp-server
 (after! rustic
-  (setq rustic-lsp-server 'rust-analyzer))
+  (setq rustic-lsp-server 'rust-analyzer)
+  (setq rustic-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustfmt")
+  (setq rustic-rustfmt-args "+nightly"))
