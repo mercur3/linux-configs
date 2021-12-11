@@ -5,3 +5,10 @@
 ;; delete keybinding for SPC-:
 (map! :leader
       :nv ":" nil)
+
+(add-hook! 'rustic-mode-hook #'(lambda ()
+                               (map! :leader
+                                     :nv "c f" nil)
+                               (map! :leader
+                                     :desc "Fromat Rust file"
+                                     :nv "c f" #'rustic-format-file)))
