@@ -18,6 +18,7 @@ set showmatch
 set hlsearch
 set textwidth=100
 set colorcolumn=+0
+set viminfo+=n~/.vim/viminfo
 highlight ColorColumn ctermbg=DarkGray guibg=lightgray
 
 " remaps
