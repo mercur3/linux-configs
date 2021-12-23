@@ -29,6 +29,9 @@
 ;; do not prompt for exit confirmation
 (setq confirm-kill-emacs nil)
 
+;; delete by moving to trash
+(setq delete-by-moving-to-trash t)
+
 (load! "configs/ui")
 (load! "configs/keybindings")
 (load! "configs/org")
