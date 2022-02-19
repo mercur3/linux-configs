@@ -1,2 +1,0 @@
-# linux-configs
-Configs I like to use when installing linux
