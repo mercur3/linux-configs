@@ -1,10 +1,15 @@
 [user]
     name = Andri Reveli
     email = reveliandri@gmail.com
-[color]
-    ui = true
+    signingKey = reveliandri@gmail.com
 [init]
 	defaultBranch = "master" 
+[color]
+    ui = true
+[commit]
+    gpgSign = true
+[tag]
+    gpgSign = true
 [credential]
 	helper = store
 [pager]
