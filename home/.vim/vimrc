@@ -19,6 +19,7 @@ set hlsearch
 set textwidth=100
 set colorcolumn=+0
 set viminfo+=n~/.vim/viminfo
+set novisualbell
 highlight ColorColumn ctermbg=DarkGray guibg=lightgray
 
 " remaps

@@ -30,6 +30,7 @@ set incsearch
 set clipboard+=ideaput
 set showmode
 set showcmd
+set visualbell
 
 " intellij specific
 set ideajoin
