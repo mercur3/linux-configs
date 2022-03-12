@@ -34,5 +34,7 @@
 (setq fancy-splash-image "~/.config/doom/resource/img/emacs-icon.png")
 
 ;; doom-modeline
-(setq doom-modeline-irc nil)
-(setq doom-modeline-env-version nil)
+(setq doom-modeline-irc nil
+      doom-modeline-env-version nil
+      doom-modeline-major-mode-icon t
+      doom-modeline-buffer-encoding t)
