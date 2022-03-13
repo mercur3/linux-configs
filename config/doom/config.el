@@ -32,6 +32,23 @@
 ;; delete by moving to trash
 (setq delete-by-moving-to-trash t)
 
+;; completion
+(setq vertico-count 20
+      vertico-resize nil)
+
+;; try the `completion-category-sort-function` first
+(advice-add #'vertico--sort-function :before-until #'completion-category-sort-function)
+
+(defun completion-category-sort-function ()
+  (or (vertico--metadata-get 'display-sort-function)
+      (alist-get (vertico--metadata-get 'category)
+                 completion-category-sort-function-overrides)))
+
+;; completion category-specific sort function overrides
+(defvar completion-category-sort-function-overrides
+  '((file . (lambda (files) (vertico-sort-alpha files)))))
+
+
 (load! "configs/ui")
 (load! "configs/keybindings")
 (load! "configs/org")
