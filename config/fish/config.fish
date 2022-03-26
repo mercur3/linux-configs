@@ -10,9 +10,17 @@ set fish_cursor_insert block
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
 
+### ALIASES
+alias ll="exa -alh"
+
+### FUNCTIONS
 function fish_user_key_bindings
     fish_vi_key_bindings
 end
 
-### ALIASES
-alias ll="exa -alh"
+function fish_prompt
+    printf "[%s%s@%s %s%s%s]%s\$%s " \
+        (set_color green) $USER (hostname) \
+        (set_color cyan) $PWD (set_color $fish_color_normal) \
+        (set_color yellow) (set_color $fish_color_normal)
+end
