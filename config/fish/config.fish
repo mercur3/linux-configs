@@ -19,8 +19,9 @@ function fish_user_key_bindings
 end
 
 function fish_prompt
-    printf "[%s%s@%s %s%s%s]%s\$%s " \
-        (set_color green) $USER (hostname) \
-        (set_color cyan) $PWD (set_color $fish_color_normal) \
-        (set_color yellow) (set_color $fish_color_normal)
+    printf "[%s%s%s%s@%s%s %s%s%s]%s\$%s " \
+        (set_color -o green) $USER (set_color $fish_color_normal) \
+        (set_color magenta) (set_color -o green) (hostname) \
+        (set_color -o cyan) $PWD (set_color $fish_color_normal) \
+        (set_color -o yellow) (set_color $fish_color_normal)
 end
