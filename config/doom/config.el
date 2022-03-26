@@ -29,6 +29,8 @@
 ;; do not prompt for exit confirmation
 (setq confirm-kill-emacs nil)
 
+(setq tab-width 4)
+
 ;; delete by moving to trash
 (setq delete-by-moving-to-trash t)
 

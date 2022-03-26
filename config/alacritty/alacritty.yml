@@ -56,7 +56,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.9
+  # opacity: 0.9
 
   # Window decorations
   #
@@ -177,8 +177,8 @@ draw_bold_text_with_bright_colors: false
 colors:
   # Default colors
   primary:
-    background: '#282a36'
-    foreground: '#afc0c3'
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -266,25 +266,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#000000'
-    red:     '#ff5555'
-    green:   '#50fa7b'
-    yellow:  '#ffb86c'
-    blue:    '#8be9fd'
-    magenta: '#bd93f9'
-    cyan:    '#ff79c6'
-    white:   '#ffffff'
+    black:   '0x1d1f21'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xf5be51'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xc5c8c6'
 
   # Bright colors
   bright:
-    black:   '#44475a'
-    red:     '#ff5555'
-    green:   '#50fb7b'
-    yellow:  '#ffb86c'
-    blue:    '#8be9dd'
-    magenta: '#bd93f9'
-    cyan:    '#ff79c6'
-    white:   '#94a3a5'
+    black:   '0x969896'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xf5be51'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xffffff'
 
   # Dim colors
   #
@@ -308,7 +308,13 @@ colors:
   # Example:
   #   `- { index: 16, color: '#ff00ff' }`
   #
-  #indexed_colors: []
+  indexed_colors:
+    - { index: 16, color: '0xde935f' }
+    - { index: 17, color: '0xa3685a' }
+    - { index: 18, color: '0x282a2e' }
+    - { index: 19, color: '0x373b41' }
+    - { index: 20, color: '0xb4b7b4' }
+    - { index: 21, color: '0xe0e0e0' }
 
 # Bell
 #
