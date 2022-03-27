@@ -1,10 +1,36 @@
-# Lines configured by zsh-newuser-install
 HISTFILE="$ZDOTDIR/.histfile"
 HISTSIZE=1000
 SAVEHIST=1000
+
+# Activate vim mode.
 bindkey -v
-export KEYTIMEOUT=1
-# End of lines configured by zsh-newuser-install
+# Remove mode switching delay.
+KEYTIMEOUT=5
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+    if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then
+        echo -ne '\e[2 q'
+
+    elif [[ ${KEYMAP} == main ]] ||
+           [[ ${KEYMAP} == viins ]] ||
+           [[ ${KEYMAP} = '' ]] ||
+           [[ $1 = 'beam' ]]; then
+        echo -ne '\e[6 q'
+    fi
+}
+zle -N zle-keymap-select
+
+# Use beam shape cursor on startup.
+echo -ne '\e[6 q'
+_fix_cursor() {
+   echo -ne '\e[6 q'
+}
+precmd_functions+=(_fix_cursor)
+
+
+
+
 # The following lines were added by compinstall
 zstyle :compinstall filename "$ZDOTDIR/.zshrc"
 
@@ -30,8 +56,8 @@ alias zgrep="zgrep --color=auto"
 setopt no_auto_remove_slash
 
 TRAPINT() {
-  print -n "^C"
-  return $(( 128 + $1 ))
+    print -n "^C"
+    return $(( 128 + $1 ))
 }
 
 PS1="[%B%F{green}%n%b%F{magenta}@%B%F{green}%m %B%F{cyan}%~%b%f]%B%F{yellow}$%b%f "
