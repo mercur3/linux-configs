@@ -3,11 +3,13 @@ HISTFILE="$ZDOTDIR/.histfile"
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
+export KEYTIMEOUT=1
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename "/home/andri/.zshrc"
+zstyle :compinstall filename "$ZDOTDIR/.zshrc"
 
 autoload -Uz compinit
+stty stop undef
 compinit
 # End of lines added by compinstall
 

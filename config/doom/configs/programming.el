@@ -11,7 +11,8 @@
 (defun setup ()
   (setq fill-column 100)                        ;; visual column line
   (display-fill-column-indicator-mode)          ;; display column indicator at
-  (setq truncate-lines 'nil))                   ;; wrap long lines
+  (setq truncate-lines 'nil)                    ;; wrap long lines
+  (setq tab-width 4))
 
 (add-hook 'prog-mode-hook #'setup)
 (add-hook 'org-mode-hook #'setup)
