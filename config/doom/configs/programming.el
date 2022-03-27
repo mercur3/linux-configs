@@ -17,7 +17,7 @@
 (add-hook 'prog-mode-hook #'setup)
 (add-hook 'org-mode-hook #'setup)
 
-;; remove anoying popups when lsp is enabled
+;; remove annoying popups when lsp is enabled
 (setq lsp-ui-doc-enable nil)
 
 ;; ensure rust-analyzer is used as lsp-server
