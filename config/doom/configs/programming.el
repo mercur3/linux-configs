@@ -21,7 +21,8 @@
 (setq lsp-ui-doc-enable nil)
 
 ;; ensure rust-analyzer is used as lsp-server
-(after! rustic
+(defun configure-rustfmt ()
   (setq rustic-lsp-server 'rust-analyzer)
   (setq rustic-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustfmt")
   (setq rustic-rustfmt-args "+nightly"))
+(add-hook 'rustic-mode-hook #'configure-rustfmt)
