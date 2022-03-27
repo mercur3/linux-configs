@@ -5,31 +5,7 @@ SAVEHIST=1000
 # Activate vim mode.
 bindkey -v
 # Remove mode switching delay.
-KEYTIMEOUT=5
-
-# Change cursor shape for different vi modes.
-function zle-keymap-select {
-    if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then
-        echo -ne '\e[2 q'
-
-    elif [[ ${KEYMAP} == main ]] ||
-           [[ ${KEYMAP} == viins ]] ||
-           [[ ${KEYMAP} = '' ]] ||
-           [[ $1 = 'beam' ]]; then
-        echo -ne '\e[6 q'
-    fi
-}
-zle -N zle-keymap-select
-
-# Use beam shape cursor on startup.
-echo -ne '\e[6 q'
-_fix_cursor() {
-   echo -ne '\e[6 q'
-}
-precmd_functions+=(_fix_cursor)
-
-
-
+KEYTIMEOUT=1
 
 # The following lines were added by compinstall
 zstyle :compinstall filename "$ZDOTDIR/.zshrc"
