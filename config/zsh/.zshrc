@@ -3,7 +3,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Activate vim mode.
-bindkey -v
+bindkey -v "^?" backward-delete-char
 # Remove mode switching delay.
 KEYTIMEOUT=1
 
