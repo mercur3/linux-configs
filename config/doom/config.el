@@ -48,8 +48,14 @@
 
 ;; completion category-specific sort function overrides
 (defvar completion-category-sort-function-overrides
-  '((file . (lambda (files) (vertico-sort-alpha files)))))
+  '((file . (lambda (files)
+              ;; sort alphabetically
+              (setq files (vertico-sort-alpha files))
+              ;; but then move directories first
+              (nconc (seq-filter (lambda (x) (string-suffix-p "/" x)) files)
+                     (seq-remove (lambda (x) (string-suffix-p "/" x)) files))))))
 
+(remove-hook 'doom-first-buffer-hook #'ws-butler-global-mode)
 
 (load! "configs/ui")
 (load! "configs/keybindings")
