@@ -22,8 +22,13 @@ set viminfo+=n~/.vim/viminfo
 set novisualbell
 highlight ColorColumn ctermbg=DarkGray guibg=lightgray
 
+" Tmux being weird
+set background=dark
+set t_Co=256
+
 " remaps
 let mapleader = " "
 map <leader>w <C-w>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+

@@ -14,3 +14,5 @@ git-delta
 foliate
 vlc
 zsh-syntax-highlighting
+tmux
+
