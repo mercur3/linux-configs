@@ -55,7 +55,15 @@
               (nconc (seq-filter (lambda (x) (string-suffix-p "/" x)) files)
                      (seq-remove (lambda (x) (string-suffix-p "/" x)) files))))))
 
+;; dont kill scratch buffer
+(add-hook 'kill-buffer-query-functions (lambda ()
+                                         (if (not (equal (buffer-name) "*scratch*"))
+                                             t
+                                           (message "Not allowed to kill scratch buffer")
+                                           nil)))
+
 (load! "configs/ui")
 (load! "configs/keybindings")
 (load! "configs/org")
 (load! "configs/programming")
+
