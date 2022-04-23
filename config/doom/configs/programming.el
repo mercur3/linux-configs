@@ -1,3 +1,5 @@
+;;; $DOOMDIR/configs/programming.el -*- lexical-binding: t; -*-
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
@@ -26,3 +28,5 @@
   (setq rustic-rustfmt-bin "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustfmt")
   (setq rustic-rustfmt-args "+nightly"))
 (add-hook 'rustic-mode-hook #'configure-rustfmt)
+
+(remove-hook 'doom-first-buffer-hook #'ws-butler-global-mode)

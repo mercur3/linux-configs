@@ -1,3 +1,5 @@
+;;; $DOOMDIR/configs/org.el -*- lexical-binding: t; -*-
+
 (setq org-directory "~/code/org/")
 
 ;; show when org heading is folded
@@ -36,3 +38,4 @@
                                              :weight normal
                                              :underline t))
                    org-log-done 'time))
+

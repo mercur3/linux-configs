@@ -55,8 +55,6 @@
               (nconc (seq-filter (lambda (x) (string-suffix-p "/" x)) files)
                      (seq-remove (lambda (x) (string-suffix-p "/" x)) files))))))
 
-(remove-hook 'doom-first-buffer-hook #'ws-butler-global-mode)
-
 (load! "configs/ui")
 (load! "configs/keybindings")
 (load! "configs/org")
