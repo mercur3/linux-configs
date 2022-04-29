@@ -36,7 +36,7 @@ TRAPINT() {
     return $(( 128 + $1 ))
 }
 
-PS1="[%B%F{green}%n%b%F{magenta}@%B%F{green}%m %B%F{cyan}%~%b%f]%B%F{yellow}$%b%f "
+PS1="%B%F{red}[%F{green}%n%b%F{magenta}@%B%F{green}%m %B%F{cyan}%~%F{red}]%F{yellow}$%b%f "
 
 # Syntax highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
