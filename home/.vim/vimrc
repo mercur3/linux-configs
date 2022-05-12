@@ -16,6 +16,7 @@ set clipboard=unnamedplus
 set linebreak
 set showmatch
 set hlsearch
+set incsearch
 set textwidth=100
 set colorcolumn=+0
 set viminfo+=n~/.vim/viminfo
