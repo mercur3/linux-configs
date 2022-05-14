@@ -62,6 +62,8 @@
                                            (message "Not allowed to kill scratch buffer")
                                            nil)))
 
+(setq dired-kill-when-opening-new-dired-buffer t)
+
 (load! "configs/ui")
 (load! "configs/keybindings")
 (load! "configs/org")
