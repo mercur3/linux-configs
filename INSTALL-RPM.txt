@@ -15,4 +15,5 @@ foliate
 vlc
 zsh-syntax-highlighting
 tmux
+pv
 
