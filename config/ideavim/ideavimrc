@@ -41,8 +41,8 @@ let mapleader = " "
 map <leader>w <C-w>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
-nnoremap <leader>cf :action ReformatCode<CR>
-nnoremap <leader>bk :action CloseContent \| :action OptimizeImports<CR>
+nnoremap <leader>cf :action ReformatCode \| :action OptimizeImports<CR>
+nnoremap <leader>bk :action CloseContent<CR>
 nnoremap gc :action CommentByLineComment<CR>
 vnoremap gc :action CommentByLineComment<CR>
 
