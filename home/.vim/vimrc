@@ -32,4 +32,5 @@ let mapleader = " "
 map <leader>w <C-w>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+set iskeyword-=_
 

@@ -47,6 +47,7 @@ nnoremap <leader>bk :action CloseContent<CR>
 nnoremap gc :action CommentByLineComment<CR>
 vnoremap gc :action CommentByLineComment<CR>
 nnoremap <leader>. :action GotoFile<CR>
+set iskeyword-=_
 
 " NERDTree
 set NERDTree
