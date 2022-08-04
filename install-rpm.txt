@@ -8,7 +8,7 @@ exa
 thunderbird
 flatpak
 alacritty
-vim
+neovim
 htop
 git-delta
 foliate
