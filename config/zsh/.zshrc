@@ -41,3 +41,4 @@ PS1="%B%F{red}[%F{green}%n%b%F{magenta}@%B%F{green}%m %B%F{cyan}%~%F{red}]%F{yel
 # Syntax highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
