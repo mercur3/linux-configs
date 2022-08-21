@@ -8,3 +8,8 @@
 (map! :leader
       :nv ":" nil)
 
+(add-hook! 'rustic-mode-hook #'(lambda ()
+                                 (map! :leader
+                                       :desc "Fromat Rust buffer"
+                                       :nv "c f" #'rustic-format-buffer)))
+
