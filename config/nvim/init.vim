@@ -3,6 +3,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set ruler
 set number
+set relativenumber
 set tabstop=4
 set shiftwidth=4
 set smarttab
