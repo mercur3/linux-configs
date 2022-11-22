@@ -13,7 +13,7 @@ htop
 git-delta
 foliate
 vlc
-zsh-syntax-highlighting
+fish
 tmux
 pv
 
