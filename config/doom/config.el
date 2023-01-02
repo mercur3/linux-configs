@@ -29,10 +29,10 @@
 ;; do not prompt for exit confirmation
 (setq confirm-kill-emacs nil)
 
-(setq tab-width 4)
+;; deal with: file xyz newer than byte-compiled file abc, using the old one
+(setq load-prefer-newer t)
 
-;; delete by moving to trash
-(setq delete-by-moving-to-trash t)
+(setq tab-width 4)
 
 ;; completion
 (setq vertico-count 20
@@ -62,6 +62,8 @@
                                            (message "Not allowed to kill scratch buffer")
                                            nil)))
 
+;; delete by moving to trash
+(setq delete-by-moving-to-trash t)
 (setq dired-kill-when-opening-new-dired-buffer t)
 
 (load! "configs/ui")
