@@ -2,18 +2,25 @@
     name = Andri Reveli
     email = reveliandri@gmail.com
     signingKey = reveliandri@gmail.com
-[init]
-	defaultBranch = "master" 
 [color]
     ui = true
+[color "grep"]
+    filename = magenta bold
+    linenumber = yellow bold
+    match = red
 [commit]
-    gpgSign = true
-[tag]
     gpgSign = true
 [credential]
 	helper = store
+[grep]
+    fullName = true
+    lineNumber = true
+[init]
+	defaultBranch = "master" 
 [pager]
     diff = delta
+[tag]
+    gpgSign = true
 [delta]
     line-numbers = true
     side-by-side = false
