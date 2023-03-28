@@ -54,4 +54,5 @@ set iskeyword-=_
 " NERDTree
 set NERDTree
 nmap <leader>op :NERDTreeFocus<CR>
+nmap <leader>cp :NERDTreeClose<CR>
 
