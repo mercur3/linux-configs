@@ -2,7 +2,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type 'relative)
+(setq display-line-numbers-type 'number)
 
 ;; prettier symbols
 (setq prettify-symbols-alist
@@ -30,3 +30,7 @@
 (add-hook 'rustic-mode-hook #'configure-rustfmt)
 
 (remove-hook 'doom-first-buffer-hook #'ws-butler-global-mode)
+
+;; disable spell checking
+(setq lsp-diagnostics-provider :none)
+
