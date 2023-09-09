@@ -19,7 +19,7 @@ compinit
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias grep="grep --color=auto"
-alias ll="exa -alh"
+alias ll="eza -alh"
 alias ls="ls --color=auto"
 alias xzegrep="xzegrep --color=auto"
 alias xzfgrep="xzfgrep --color=auto"

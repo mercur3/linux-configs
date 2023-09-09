@@ -4,7 +4,7 @@ end
 
 # aliases
 alias ls="ls --color=always"
-alias ll="exa -alh"
+alias ll="eza -alh"
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"

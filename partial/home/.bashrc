@@ -9,7 +9,7 @@ export VISUAL=nvim
 export ZDOTDIR="$HOME/.config/zsh"
 
 # Aliases
-alias ll="exa -alh"
+alias ll="eza -alh"
 
 zsh
 
