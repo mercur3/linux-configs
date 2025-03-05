@@ -2,6 +2,10 @@
     name = Andri Reveli
     email = reveliandri@gmail.com
     signingKey = reveliandri@gmail.com
+[branch]
+    sort = -committerdate
+[column]
+    ui = auto
 [color]
     ui = true
 [color "grep"]
@@ -12,17 +16,34 @@
     gpgSign = true
 [credential]
 	helper = store
+[fetch]
+    all = true
+    prune = true
+    pruneTags = true
 [grep]
     fullName = true
     lineNumber = true
 [init]
 	defaultBranch = "master" 
+[maintenance]
+    commit-graph = enabled
+    incremantal-repack = enabled
+    gc = enabled
+    pack-refs = enabled
+[merge]
+    conflictstyle = zdiff3
 [pager]
     diff = delta
+[push]
+    autoSetupRemote = true
+    followTags = true
 [tag]
     gpgSign = true
+    sort = version:refname
+
 [delta]
     line-numbers = true
     side-by-side = false
     line-numbers-left-format = "{nm:>4}│"
     line-numbers-right-format = "{np:>4}│"
+
