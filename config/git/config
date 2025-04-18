@@ -2,6 +2,8 @@
     name = Andri Reveli
     email = reveliandri@gmail.com
     signingKey = reveliandri@gmail.com
+[alias]
+    lg = "log --all --decorate --graph"
 [branch]
     sort = -committerdate
 [column]
