@@ -15,6 +15,7 @@ fish_vi_key_bindings
 
 set fish_prompt_pwd_dir_length 0
 set fish_greeting
+set fish_cursor_insert "block"
 set __fish_git_prompt_show_informative_status
 set __fish_git_prompt_showcolorhints
 set __fish_git_prompt_showupstream "informative"
