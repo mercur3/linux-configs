@@ -42,8 +42,8 @@
        tabs                     ; a tab bar for Emacs
        treemacs                 ; a project drawer, like neotree but cooler
        ;;unicode                ; extended unicode support for various languages
-       vc-gutter                ; vcs diff in the fringe
-       ;;vi-tilde-fringe        ; fringe tildes to mark beyond EOB
+       (vc-gutter +pretty)      ; vcs diff in the fringe
+       vi-tilde-fringe          ; fringe tildes to mark beyond EOB
        ;;window-select          ; visually switch windows
        workspaces               ; tab emulation, persistence & separate workspaces
        ;;zen                    ; distraction-free coding or writing
@@ -76,21 +76,21 @@
        ;;vterm                  ; the best terminal emulation in Emacs
 
        :checkers
-       ;;syntax                 ; tasing you for every semicolon you forget
+       syntax                   ; tasing you for every semicolon you forget
        ;;(spell +flyspell)      ; tasing you for misspelling mispelling
        ;;grammar                ; tasing grammar mistake every you make
 
        :tools
        ;;ansible
        ;;biblio                 ; Writes a PhD for you (citation needed)
-       ;;debugger               ; FIXME stepping through code, to help you add bugs
+       (debugger +lsp)          ; FIXME stepping through code, to help you add bugs
        ;;direnv
        docker
        ;;editorconfig           ; let someone else argue about tabs vs spaces
        ;;ein                    ; tame Jupyter notebooks with emacs
        (eval +overlay)          ; run code, run (also, repls)
        ;;gist                   ; interacting with github gists
-       lookup                   ; navigate your code and its documentation
+       (lookup +dictionary +offline +docset)                   ; navigate your code and its documentation
        (lsp +peek)
        ;;magit                  ; a git porcelain for Emacs
        ;;make                   ; run make tasks from Emacs
@@ -118,7 +118,7 @@
        ;;(dart +flutter)          ; paint ui and not much else
        ;;elixir                   ; erlang done right
        ;;elm                      ; care for a cup of TEA?
-       emacs-lisp                 ; drown in parentheses
+       (emacs-lisp +lsp +tree-sitter)                 ; drown in parentheses
        ;;erlang                   ; an elegant language for a more civilized age
        ;;ess                      ; emacs speaks statistics
        ;;factor
@@ -126,7 +126,7 @@
        ;;fsharp                   ; ML stands for Microsoft's Language
        ;;fstar                    ; (dependent) types and (monadic) effects and Z3
        ;;gdscript                 ; the language you waited for
-       ;;(go +lsp)                ; the hipster dialect
+       ;;(go +lsp +tree-sitter)   ; the hipster dialect
        ;;(graphql +lsp)           ; Give queries a REST
        ;;(haskell +dante)         ; a language that's lazier than I am
        ;;hy                       ; readability of scheme w/ speed of python
