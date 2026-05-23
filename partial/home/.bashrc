@@ -12,5 +12,10 @@ export MANPAGER='nvim +Man!'
 # Aliases
 alias ll="eza -alh"
 
+# GO
+PATH="$PATH:$HOME/.local/bin/go/bin"
+export GOPATH="$HOME/.local/bin/go-libs"
+PATH="$PATH:$GOPATH/bin"
+
 zsh
 
