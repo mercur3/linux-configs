@@ -521,7 +521,7 @@ mods = "Control|Shift"
 decorations = "full"
 decorations_theme_variant = "Dark"
 dynamic_title = true
-opacity = 0.9
+opacity = 0.85
 startup_mode = "Maximized"
 title = "Alacritty"
 
